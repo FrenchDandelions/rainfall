@@ -1,0 +1,10 @@
+gets = 80 IEP;
+
+80: nop * 24 
+56: SHELLCODE - 23
+33: nop till IEP 
+0: 4 bytes IEP
+
+buffer: 24 NOP + SHELLCODE + PADDIMG NOP(32) + IEP 
+
+IEP = heap buffer = [0x0804a008 .... 0x0804a008 + 24]
